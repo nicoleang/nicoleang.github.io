@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="eng">
+
+<head>
+  <meta name="author" content="Nicole Nieva Ang">
+  <meta name="description" content="Personal Website">
+  <title>Nicole Ang</title>
+  <link rel="stylesheet" media="all" href="css/styles.css" />
+  <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <script src="js/scripts.js"></script>
+  <script src="js/classie.js"></script>
+  <script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+  </script>
+</head>
+
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+
+<body>
+  <h1><a href="index.html">Nicole Ang</a></h1>
+
+  <div id="wrapper">
+  <header>
+    <div class="container clearfix">
+        <h1 id="logo">
+            NICOLE ANG
+        </h1>
+        <nav>
+            <a class="selected" href="index.html">About</a>
+            <a href="work.html">Work</a>
+        </nav>
+    </div>
+  </header>
+
+    <div id="main">
+    <div id="content">
+        <section>
+            <div class="container">
+                <img src="images/nicolecircle.jpg" height=200>
+                <br>
+                <p>Hey there! I'm Nicole-- a technology enthusiast, foodie, and avid traveler.  
+
+I'm currently studying Information Systems (primary major) and Statistics + Machine Learning (double major) as a 3rd year undergraduate student at Carnegie Mellon University. <br><br>
+Contact me: nicoleang@cmu.edu
+
+</p>
+                <p>
+                  
+                </p><br><br>
+            </div>
+        </section>
+        
+        <section class="color">
+            <div class="container">
+                <h1>Oh the places I'll go!</h1>
+                <p>I'm a Los Angeles native, but I moved to Pittsburgh in 2015 to pursue my undergraduate education. I love to travel and definitely consider myself an urbanite. My goal in the future is to travel more widely and expose myself to the many different cultures of the world. Check out the progress I've made so far by looking at the map below.
+                </p>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1SvwI2lXS7deL3silcUXl8QUZnuI" width="550" height="280"></iframe>
+                <p>
+                <i>Blue markers indicate places I've visited</i><br>
+                <i>Red markers indicate places I've been to many times or have lived in before</i><br></p><br>
+                <p>Current Location: Monterey, CA</p>
+            </div>
+        </section>
+
+    </div>
+</div><!-- #main -->
+
+
+  </div>
+    
+<!-- BEGIN FOOTER -->
+
+</body>
+
+</html>

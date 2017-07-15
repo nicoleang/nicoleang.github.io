@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="eng">
+
+<head>
+  <meta name="author" content="Nicole Nieva Ang">
+  <meta name="description" content="Personal Website">
+  <title>Nicole Ang</title>
+  <link rel="stylesheet" media="all" href="css/styles.css" />
+  <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <script src="js/scripts.js"></script>
+  <script src="js/classie.js"></script>
+  <script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+  </script>
+</head>
+
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+
+<body>
+  <h1><a href="index.html">Nicole Ang</a></h1>
+
+  <div id="wrapper">
+  <header>
+    <div class="container clearfix">
+        <h1 id="logo">
+            NICOLE ANG
+        </h1>
+        <nav>
+            <a class="selected" href="index.html">About</a>
+            <a href="work.html">Work</a>
+        </nav>
+    </div>
+  </header>
+
+    <div id="main">
+    <div id="content">
+        <section>
+            <div class="container">
+                <h1><u>Work Experience</u></h1><br>
+                <p><b>Northrop Grumman (Research Facilitation Laboratory) </b><i>- Software Engineer Intern</i></p>
+                <p>During my time at Northrop Grumman, I worked on the Complex Behavior Model project. I applied a support vector machine to Army datasets to create a model that would be able to determine whether a soldier is deployable or non-deployable. I used the sk-learn Python package to apply the SVM.</p>
+
+                <br><br>
+                <h1><u>Work</u></h1>
+                
+                <br>
+                <p><b>Barista Trainer</b></p>
+                <p>
+                The purpose of the Barista Trainer game is to train users to learn different recipes. I used the Python module Pygame and created the game using top-down design and object-oriented programming.<br><br>
+                Project video: http://bit.ly/2ef1AcK<br>
+                View project code: https://github.com/nicoleang/baristatrainer
+                </p><br><br>
+
+                <p><b>Title IX Web Application for University Coordinators</b></p>
+                <p>
+                Used: Django<br>
+                I worked with a team to create an app that allows Title IX coordinators to share tacit knowledge on cases such as sexual assault. The app would allow Title IX officials from different universities to communicate with one another and 
+                </p><br><br>
+
+                <p><b>Running App (In Progress)</b></p>
+                <p>
+                I'm working with a team this summer to create a running app on iOS. <br>Expected completion: End of August<br><br>
+                </p><br><br>
+            </div>
+        </section>
+<!--         
+        <section class="color">
+            <div class="container">
+                <h1>Courses Taken</h1>
+                <p>I'm a Los Angeles native, but I moved to Pittsburgh in 2015 to pursue my undergraduate education. I love to travel and definitely consider myself an urbanite. My goal in the future is to travel more widely and expose myself to the many different cultures of the world. Check out the progress I've made so far:</p>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1SvwI2lXS7deL3silcUXl8QUZnuI" width="550" height="280"></iframe>
+                <p><i>Red markers indicate places I've visited frequently</i></p><br>
+                <p>Current Location: Monterey, CA</p>
+            </div>
+        </section> -->
+
+    </div>
+</div><!-- #main -->
+
+
+  </div>
+    
+<!-- BEGIN FOOTER -->
+
+</body>
+
+</html>
